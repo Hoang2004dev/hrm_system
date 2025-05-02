@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Project": {
+      "commandName": "Project",  // Sử dụng Kestrel thay vì IIS Express
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000;https://localhost:5001",  // Cấu hình cổng HTTP và HTTPS
+      "dotnetRunMessages": true
+    }
+  }
+}
+y
