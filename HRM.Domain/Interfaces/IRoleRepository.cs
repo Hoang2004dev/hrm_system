@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.Domain.Specifications.Employees
+namespace HRM.Domain.Interfaces
 {
-    internal class EmployeeByEmailSpec
+    public interface IRoleRepository : IGenericRepository<Entities.Role>
     {
+
     }
 }

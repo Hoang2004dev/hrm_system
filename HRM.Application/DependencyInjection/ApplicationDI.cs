@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using HRM.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

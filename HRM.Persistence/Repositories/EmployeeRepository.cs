@@ -1,4 +1,5 @@
-﻿using HRM.Domain.Entities;
+﻿using HRM.Domain;
+using HRM.Domain.Entities;
 using HRM.Domain.Interfaces;
 using HRM.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;

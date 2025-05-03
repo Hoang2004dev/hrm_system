@@ -1,48 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
-namespace HRM.Domain.Entities
+namespace HRM.Domain.Entities;
+
+public partial class User
 {
-    [Index("Username", Name = "UQ__Users__536C85E450BE968E", IsUnique = true)]
-    public partial class User
-    {
-        [Key]
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        [StringLength(50)]
-        public string Username { get; set; } = null!;
+    public string Username { get; set; } = null!;
 
-        [StringLength(255)]
-        public string PasswordHash { get; set; } = null!;
+    public string PasswordHash { get; set; } = null!;
 
-        [StringLength(100)]
-        public string? Email { get; set; }
+    public string? Email { get; set; }
 
-        [StringLength(100)]
-        public string? FullName { get; set; }
+    public string? FullName { get; set; }
 
-        [Column(TypeName = "datetime")]
-        public DateTime? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
-        public bool? IsActive { get; set; }
+    public bool? IsActive { get; set; }
 
-        [InverseProperty("CreatedByNavigation")]
-        public virtual ICollection<CalendarEvent> CalendarEvents { get; set; } = new List<CalendarEvent>();
+    public virtual ICollection<CalendarEvent> CalendarEvents { get; set; } = new List<CalendarEvent>();
 
-        [InverseProperty("CreatedByNavigation")]
-        public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
-        [InverseProperty("User")]
-        public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+    public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 
-        [InverseProperty("User")]
-        public virtual ICollection<SystemLog> SystemLogs { get; set; } = new List<SystemLog>();
+    public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
 
-        [ForeignKey("UserId")]
-        [InverseProperty("Users")]
-        public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
-    }
+    public virtual ICollection<SystemLog> SystemLogs { get; set; } = new List<SystemLog>();
+
+    public virtual ICollection<UserProjectRole> UserProjectRoles { get; set; } = new List<UserProjectRole>();
 }

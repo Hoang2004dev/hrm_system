@@ -1,4 +1,5 @@
 ﻿using HRM.Application.DependencyInjection;
+using HRM.Infrastructure.DependencyInjection;
 using HRM.Persistence.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
@@ -20,6 +21,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
 
 var app = builder.Build();
@@ -30,6 +32,10 @@ app.UseSwaggerUI();
 
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
-app.UseAuthorization();
+
+// Cấu hình middleware
+app.UseAuthentication(); // Thêm middleware xác thực
+app.UseAuthorization();  // Thêm middleware phân quyền
+
 app.MapControllers();
 app.Run();

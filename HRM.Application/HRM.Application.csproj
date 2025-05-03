@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <Folder Include="Results\" />
+    <Folder Include="UseCases\User\Commands\" />
+    <Folder Include="UseCases\User\Queries\" />
     <Folder Include="Validators\" />
   </ItemGroup>
 

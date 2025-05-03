@@ -19,27 +19,32 @@ namespace HRM.Persistence.Repositories
             _context = context;
         }
 
-        public async Task<T?> GetByIdAsync(Guid id) => await _context.Set<T>().FindAsync(id);
-        public async Task<List<T>> GetAllAsync() => await _context.Set<T>().ToListAsync();
+        public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+            => await _context.Set<T>().FindAsync(new object[] { id }, cancellationToken);
 
-        public async Task AddAsync(T entity) => await _context.Set<T>().AddAsync(entity);
-        public void Update(T entity) => _context.Set<T>().Update(entity);
-        public void Delete(T entity) => _context.Set<T>().Remove(entity);
+        public async Task<List<T>> GetAllAsync(CancellationToken cancellationToken = default)
+            => await _context.Set<T>().ToListAsync(cancellationToken);
 
-        public async Task<List<T>> FindAsync(BaseSpecification<T> spec)
+        public async Task AddAsync(T entity, CancellationToken cancellationToken = default)
+            => await _context.Set<T>().AddAsync(entity, cancellationToken);
+
+        public void Update(T entity)
+            => _context.Set<T>().Update(entity);
+
+        public void Delete(T entity)
+            => _context.Set<T>().Remove(entity);
+
+        public async Task<T?> FirstOrDefaultAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)
         {
-            IQueryable<T> query = _context.Set<T>();
+            IQueryable<T> query = SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            return await query.FirstOrDefaultAsync(cancellationToken);
+        }
 
-            if (spec.Criteria != null)
-                query = query.Where(spec.Criteria);
-
-            foreach (var include in spec.Includes)
-                query = query.Include(include);
-
-            if (spec.OrderBy != null)
-                query = spec.OrderBy(query);
-
-            return await query.ToListAsync();
+        public async Task<List<T>> FindAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)
+        {
+            IQueryable<T> query = SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            return await query.ToListAsync(cancellationToken);
         }
     }
+
 }

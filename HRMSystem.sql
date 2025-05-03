@@ -1,4 +1,10 @@
-﻿-- Tạo Database
+﻿USE master;
+GO
+
+DROP DATABASE HRMSystem;
+GO
+
+-- Tạo Database
 CREATE DATABASE HRMSystem;
 GO
 
@@ -27,20 +33,11 @@ CREATE TABLE RefreshTokens (
     FOREIGN KEY (UserId) REFERENCES Users(Id)
 );
 
--- Bảng vai trò
+-- Bảng Role giữ nguyên
 CREATE TABLE Roles (
     Id INT IDENTITY PRIMARY KEY,
     Name NVARCHAR(50) UNIQUE NOT NULL,
     Description NVARCHAR(255)
-);
-
--- Gán vai trò cho người dùng
-CREATE TABLE UserRoles (
-    UserId INT,
-    RoleId INT,
-    PRIMARY KEY(UserId, RoleId),
-    FOREIGN KEY(UserId) REFERENCES Users(Id),
-    FOREIGN KEY(RoleId) REFERENCES Roles(Id)
 );
 
 -- Phòng ban
@@ -50,12 +47,27 @@ CREATE TABLE Departments (
     Description NVARCHAR(255)
 );
 
--- Chức vụ
-CREATE TABLE Positions (
+CREATE TABLE Rooms (
     Id INT IDENTITY PRIMARY KEY,
-    Title NVARCHAR(100) NOT NULL,
-    Level NVARCHAR(50),
+    Name NVARCHAR(100) NOT NULL,
+    DepartmentId INT NOT NULL,
+    Description NVARCHAR(255),
+    FOREIGN KEY (DepartmentId) REFERENCES Departments(Id)
+);
+
+CREATE TABLE Projects (
+    Id INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
     Description NVARCHAR(255)
+);
+
+CREATE TABLE ProjectStatuses (
+    Id INT IDENTITY PRIMARY KEY,
+    ProjectId INT NOT NULL,
+    Status NVARCHAR(50) NOT NULL,  -- Planned, InProgress, Completed, etc.
+    FromDate DATE NOT NULL,
+    ToDate DATE, -- null nếu đang là trạng thái hiện tại
+    FOREIGN KEY (ProjectId) REFERENCES Projects(Id)
 );
 
 CREATE TABLE CalendarEvents (
@@ -74,6 +86,7 @@ CREATE TABLE CalendarEvents (
 -- Nhân viên
 CREATE TABLE Employees (
     Id INT IDENTITY PRIMARY KEY,
+    UserId INT, -- liên kết với Users nếu cần
     FullName NVARCHAR(100) NOT NULL,
     Email NVARCHAR(100),
     Phone NVARCHAR(20),
@@ -82,25 +95,46 @@ CREATE TABLE Employees (
     Gender NVARCHAR(10),
     HireDate DATE NOT NULL,
     DepartmentId INT,
-    PositionId INT,
-    FOREIGN KEY (DepartmentId) REFERENCES Departments(Id),
-    FOREIGN KEY (PositionId) REFERENCES Positions(Id)
+    FOREIGN KEY (UserId) REFERENCES Users(Id),
+    FOREIGN KEY (DepartmentId) REFERENCES Departments(Id)
+);
+
+CREATE TABLE EmployeeProjects (
+    EmployeeId INT,
+    ProjectId INT,
+    PRIMARY KEY (EmployeeId, ProjectId),
+    FOREIGN KEY (EmployeeId) REFERENCES Employees(Id),
+    FOREIGN KEY (ProjectId) REFERENCES Projects(Id)
+);
+
+CREATE TABLE ProjectRooms (
+    ProjectId INT,
+    RoomId INT,
+    PRIMARY KEY (ProjectId, RoomId),
+    FOREIGN KEY (ProjectId) REFERENCES Projects(Id),
+    FOREIGN KEY (RoomId) REFERENCES Rooms(Id)
+);
+
+CREATE TABLE UserProjectRoles (
+    UserId INT,
+    ProjectId INT,
+    RoleId INT NULL, -- có thể null
+    PRIMARY KEY(UserId, ProjectId),
+    FOREIGN KEY(UserId) REFERENCES Users(Id),
+    FOREIGN KEY(ProjectId) REFERENCES Projects(Id),
+    FOREIGN KEY(RoleId) REFERENCES Roles(Id)
 );
 
 -- Lịch sử chuyển phòng/ chức vụ
 CREATE TABLE EmployeeTransfers (
     Id INT IDENTITY PRIMARY KEY,
     EmployeeId INT NOT NULL,
-    FromDepartmentId INT,
-    ToDepartmentId INT,
-    FromPositionId INT,
-    ToPositionId INT,
+    FromRoomId INT,
+    ToRoomId INT,
     TransferDate DATE NOT NULL,
     FOREIGN KEY (EmployeeId) REFERENCES Employees(Id),
-    FOREIGN KEY (FromDepartmentId) REFERENCES Departments(Id),
-    FOREIGN KEY (ToDepartmentId) REFERENCES Departments(Id),
-    FOREIGN KEY (FromPositionId) REFERENCES Positions(Id),
-    FOREIGN KEY (ToPositionId) REFERENCES Positions(Id)
+    FOREIGN KEY (FromRoomId) REFERENCES Rooms(Id),
+    FOREIGN KEY (ToRoomId) REFERENCES Rooms(Id)
 );
 
 -- Hợp đồng lao động

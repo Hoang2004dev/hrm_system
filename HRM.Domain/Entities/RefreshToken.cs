@@ -1,34 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
-namespace HRM.Domain.Entities
+namespace HRM.Domain.Entities;
+
+public partial class RefreshToken
 {
-    public partial class RefreshToken
-    {
-        [Key]
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        public int UserId { get; set; }
+    public int UserId { get; set; }
 
-        [StringLength(255)]
-        public string Token { get; set; } = null!;
+    public string Token { get; set; } = null!;
 
-        [Column(TypeName = "datetime")]
-        public DateTime ExpiresAt { get; set; }
+    public DateTime ExpiresAt { get; set; }
 
-        [Column(TypeName = "datetime")]
-        public DateTime? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
-        [Column(TypeName = "datetime")]
-        public DateTime? RevokedAt { get; set; }
+    public DateTime? RevokedAt { get; set; }
 
-        public int IsActive { get; set; }
+    public int IsActive { get; set; }
 
-        [ForeignKey("UserId")]
-        [InverseProperty("RefreshTokens")]
-        public virtual User User { get; set; } = null!;
-    }
+    public virtual User User { get; set; } = null!;
 }

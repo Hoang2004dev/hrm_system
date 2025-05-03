@@ -1,25 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
-namespace HRM.Domain.Entities
+namespace HRM.Domain.Entities;
+
+public partial class Role
 {
-    [Index("Name", Name = "UQ__Roles__737584F6E6D28474", IsUnique = true)]
-    public partial class Role
-    {
-        [Key]
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        [StringLength(50)]
-        public string Name { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
-        [StringLength(255)]
-        public string? Description { get; set; }
+    public string? Description { get; set; }
 
-        [ForeignKey("RoleId")]
-        [InverseProperty("Roles")]
-        public virtual ICollection<User> Users { get; set; } = new List<User>();
-    }
+    public virtual ICollection<UserProjectRole> UserProjectRoles { get; set; } = new List<UserProjectRole>();
 }

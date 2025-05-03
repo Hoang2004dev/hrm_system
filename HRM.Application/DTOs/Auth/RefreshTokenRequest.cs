@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.Application.UseCases.Auth
+namespace HRM.Application.DTOs.Auth
 {
-    internal class LoginCommand
+    public class RefreshTokenRequest
     {
+        public string RefreshToken { get; set; } = null!;
     }
 }

@@ -1,13 +1,27 @@
 {
   "profiles": {
     "Project": {
-      "commandName": "Project",  // Sử dụng Kestrel thay vì IIS Express
+      "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5000;https://localhost:5001",  // Cấu hình cổng HTTP và HTTPS
+      "applicationUrl": "http://localhost:5000;https://localhost:5001",
       "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:63170/",
+      "sslPort": 44395
     }
   }
 }
-y
