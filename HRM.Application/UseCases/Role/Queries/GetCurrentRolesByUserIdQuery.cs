@@ -17,5 +17,4 @@ namespace HRM.Application.UseCases.Role.Queries
             UserId = userId;
         }
     }
-
 }

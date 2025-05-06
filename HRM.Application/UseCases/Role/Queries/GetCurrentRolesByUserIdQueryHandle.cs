@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using HRM.Application.DTOs.Role;
+using HRM.Application.Exceptions;
 using HRM.Domain.Entities;
 using HRM.Domain.Interfaces;
 using HRM.Domain.Specifications.Role;
@@ -29,12 +30,13 @@ namespace HRM.Application.UseCases.Role.Queries
             var spec = new UserCurrentRolesSpec(request.UserId);
             var userProjectRoles = await _userProjectRoleRepository.FindAsync(spec, cancellationToken);
 
+            if (userProjectRoles == null || !userProjectRoles.Any())
+                throw new NotFoundException($"No current roles found for User with ID = {request.UserId}");
+
             // Map kết quả từ UserProjectRole sang RoleResponseDTO
             var roles = userProjectRoles.Select(upr => upr.Role).Distinct().ToList();
 
             return _mapper.Map<List<RoleResponseDTO>>(roles);
         }
     }
-
-
 }

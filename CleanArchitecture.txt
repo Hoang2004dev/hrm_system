@@ -1,0 +1,20 @@
+=== UserInterface ===
+Controller
+Views
+View Models
+Filters
+Middlewares
+Utilities
+=== Application ===
+Interfaces/Contractions/Abstractions
+Bussiness Services (Commands, Queries Handlers)
+Application Exceptions
+Request/Response Models (DTOs/POCO)
+Mappers (Domain Entities-DTOs)
+Validatiors, Behaviors, Specifications
+=== Domain ===
+Domain Entities (Aggregates)
+Domain Events
+Value Object
+Enums, Constants
+

@@ -1,4 +1,5 @@
-﻿using HRM.Domain.Interfaces;
+﻿using HRM.Application.Interfaces;
+using HRM.Domain.Interfaces;
 using HRM.Persistence.Contexts;
 using HRM.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -19,9 +20,13 @@ namespace HRM.Persistence.DependencyInjection
             services.AddDbContext<HRMDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserProjectRoleRepository, UserProjectRoleRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+
             // Đăng ký các repository khác...
 
             return services;

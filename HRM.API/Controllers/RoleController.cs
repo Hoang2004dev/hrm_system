@@ -2,6 +2,7 @@
 using HRM.Application.DTOs.Role;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using HRM.API.Middlewares;
 
 namespace HRM.API.Controllers
 {
@@ -18,12 +19,20 @@ namespace HRM.API.Controllers
 
         // GET: api/Role/current/user/{userId}
         [HttpGet("current/user/{userId}")]
-        public async Task<ActionResult<List<RoleResponseDTO>>> GetCurrentRolesByUserId(int userId, CancellationToken cancellationToken)
+        public async Task<ActionResult<ApiResponse<List<RoleResponseDTO>>>> GetCurrentRolesByUserId(int userId, CancellationToken cancellationToken)
         {
             var query = new GetCurrentRolesByUserIdQuery(userId);
             var result = await _mediator.Send(query, cancellationToken);
-            return Ok(result);
+
+            // Nếu kết quả trả về null hoặc không có data, có thể trả về phản hồi NoContent
+            if (result == null || !result.Any())
+            {
+                return Ok(ApiResponse<List<RoleResponseDTO>>.NoContent("No roles found for this user."));
+            }
+
+            return Ok(ApiResponse<List<RoleResponseDTO>>.Success(result));
         }
     }
 }
+
 
