@@ -1,4 +1,4 @@
-﻿using HRM.Application.Interfaces;
+﻿using HRM.Application.Interfaces.Services;
 using HRM.Domain.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;

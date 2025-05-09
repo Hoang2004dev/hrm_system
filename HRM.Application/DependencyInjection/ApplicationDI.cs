@@ -1,15 +1,10 @@
 ﻿using FluentValidation;
 using HRM.Application.Behaviors;
-using HRM.Application.UseCases.Department.Commands;
-using HRM.Application.UseCases.Department.Validators;
-using HRM.Domain.Interfaces;
+using HRM.Application.Interfaces.Repositories;
+using HRM.Application.Specifications.Base;
+using HRM.Application.Specifications.Projection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HRM.Application.DependencyInjection
 {
@@ -27,6 +22,8 @@ namespace HRM.Application.DependencyInjection
             // Register other behaviors if needed
             // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehavior<,>));
+
+            services.AddScoped(typeof(ISpecificationEvaluator<>), typeof(DefaultSpecificationEvaluator<>));
 
             return services;
         }

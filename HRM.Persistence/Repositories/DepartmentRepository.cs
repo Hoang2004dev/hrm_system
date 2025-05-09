@@ -1,5 +1,6 @@
-﻿using HRM.Domain.Entities;
-using HRM.Domain.Interfaces;
+﻿using HRM.Application.Interfaces.Repositories;
+using HRM.Application.Specifications.Base;
+using HRM.Domain.Entities;
 using HRM.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,6 +13,9 @@ namespace HRM.Persistence.Repositories
 {
     public class DepartmentRepository : GenericRepository<Department>, IDepartmentRepository
     {
-        public DepartmentRepository(HRMDbContext context) : base(context) { }
+        public DepartmentRepository(HRMDbContext context,
+            ISpecificationEvaluator<Department> specEvaluator)
+            : base(context, specEvaluator) { }   
     }
 }
+

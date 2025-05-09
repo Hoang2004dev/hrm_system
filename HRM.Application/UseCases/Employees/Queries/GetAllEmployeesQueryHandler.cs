@@ -2,7 +2,7 @@
 using HRM.Application.DTOs;
 using HRM.Application.DTOs.Employee;
 using HRM.Application.Interfaces;
-using HRM.Domain.Interfaces;
+using HRM.Application.Interfaces.Repositories;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;

@@ -9,7 +9,7 @@
     <Folder Include="Results\" />
     <Folder Include="UseCases\User\Commands\" />
     <Folder Include="UseCases\User\Queries\" />
-    <Folder Include="Validators\" />
+    <Folder Include="UseCases\Employees\Validators\" />
   </ItemGroup>
 
   <ItemGroup>

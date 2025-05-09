@@ -1,9 +1,10 @@
-﻿using HRM.Domain.Interfaces;
-using HRM.Domain.Specifications;
+﻿using HRM.Application.Interfaces.Repositories;
+using HRM.Application.Specifications.Base;
 using HRM.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,12 @@ namespace HRM.Persistence.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly HRMDbContext _context;
+        private readonly ISpecificationEvaluator<T> _specEvaluator;
 
-        public GenericRepository(HRMDbContext context)
+        public GenericRepository(HRMDbContext context, ISpecificationEvaluator<T> specEvaluator)
         {
             _context = context;
+            _specEvaluator = specEvaluator;
         }
 
         public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
@@ -36,15 +39,19 @@ namespace HRM.Persistence.Repositories
 
         public async Task<T?> FirstOrDefaultAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)
         {
-            IQueryable<T> query = SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            IQueryable<T> query = _specEvaluator.GetQuery(_context.Set<T>().AsQueryable(), spec);
             return await query.FirstOrDefaultAsync(cancellationToken);
         }
 
         public async Task<List<T>> FindAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)
         {
-            IQueryable<T> query = SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            IQueryable<T> query = _specEvaluator.GetQuery(_context.Set<T>().AsQueryable(), spec);
+
+
+            string sql = query.ToQueryString();
+            Debug.Print(sql);
+
             return await query.ToListAsync(cancellationToken);
         }
     }
-
 }

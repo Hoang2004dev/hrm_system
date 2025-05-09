@@ -1,4 +1,4 @@
-﻿using HRM.Application.Interfaces;
+﻿using HRM.Application.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

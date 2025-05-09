@@ -1,10 +1,10 @@
 ﻿using HRM.Domain.Entities;
-using HRM.Domain.Interfaces;
 using AutoMapper;
 using MediatR;
-using HRM.Application.Validators;
 using FluentValidation;
 using HRM.Application.DTOs.Employee;
+using HRM.Application.UseCases.Employees.Validators;
+using HRM.Application.Interfaces.Repositories;
 
 namespace HRM.Application.UseCases.Employees.Commands
 {

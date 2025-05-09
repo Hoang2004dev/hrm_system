@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using HRM.Application.DTOs.Auth;
-using HRM.Application.Interfaces;
+using HRM.Application.Interfaces.Repositories;
+using HRM.Application.Interfaces.Services;
+using HRM.Application.Specifications.User;
 using HRM.Application.UseCases.Auth.Validators;
-using HRM.Domain.Entities;
-using HRM.Domain.Interfaces;
-using HRM.Domain.Specifications;
-using HRM.Domain.Specifications.User;
 using MediatR;
 using System;
 using System.Collections.Generic;

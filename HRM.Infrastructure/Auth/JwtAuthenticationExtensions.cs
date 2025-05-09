@@ -1,4 +1,4 @@
-﻿using HRM.Application.Interfaces;
+﻿using HRM.Application.Interfaces.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;

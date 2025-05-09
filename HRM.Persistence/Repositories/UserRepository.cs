@@ -1,5 +1,6 @@
-﻿using HRM.Domain.Entities;
-using HRM.Domain.Interfaces;
+﻿using HRM.Application.Interfaces.Repositories;
+using HRM.Application.Specifications.Base;
+using HRM.Domain.Entities;
 using HRM.Persistence.Contexts;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,9 @@ namespace HRM.Persistence.Repositories
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {
-        public UserRepository(HRMDbContext context) : base(context) { }
+        public UserRepository(HRMDbContext context,
+    ISpecificationEvaluator<User> specEvaluator)
+    : base(context, specEvaluator) { }
 
     }
 }

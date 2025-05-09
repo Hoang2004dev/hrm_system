@@ -1,15 +1,8 @@
-﻿using HRM.Application.Interfaces;
-using HRM.Domain.Interfaces;
+﻿using HRM.Application.Interfaces.Services;
 using HRM.Infrastructure.Auth;
 using HRM.Infrastructure.Security;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HRM.Infrastructure.DependencyInjection
 {
@@ -18,6 +11,7 @@ namespace HRM.Infrastructure.DependencyInjection
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
         {
             services.AddScoped<IHashingService, HashingService>();
+            services.AddScoped<IJwtService, JwtService>();
             // Đăng ký các repository khác...
 
             // Cấu hình JWT Authentication
