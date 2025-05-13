@@ -1,4 +1,6 @@
-﻿using HRM.API.Middlewares;
+﻿using HRM.API.Filters.ActionFilters;
+using HRM.API.Filters.ExceptionFilters;
+using HRM.API.Middlewares;
 using HRM.Application.DependencyInjection;
 using HRM.Infrastructure.DependencyInjection;
 using HRM.Persistence.DependencyInjection;
@@ -7,12 +9,15 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
-
-builder.Host.UseSerilog();
+builder.Host.UseSerilog((context, services, configuration) =>
+{
+    configuration
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services)
+        .Enrich.FromLogContext()
+        .WriteTo.Console()
+        .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day);
+});
 
 // Add services
 builder.Services.AddControllers();
@@ -27,6 +32,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "HRM API", Version = "v1" });
+});
+
+builder.Services.AddScoped<LoggingActionFilter>();
+builder.Services.AddScoped<ExecutionTimeFilter>();
+builder.Services.AddScoped<GlobalExceptionFilter>();
+
+builder.Services.AddControllers(options =>
+{
+    // Đăng ký filter toàn cục nếu muốn áp dụng mọi nơi
+    options.Filters.Add<LoggingActionFilter>();
+    options.Filters.Add<ExecutionTimeFilter>();
+    // options.Filters.Add<GlobalExceptionFilter>();
 });
 
 builder.Services.AddInfrastructure(builder.Configuration);

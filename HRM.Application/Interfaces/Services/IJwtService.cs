@@ -12,7 +12,7 @@ namespace HRM.Application.Interfaces.Services
 {
     public interface IJwtService
     {
-        string GenerateAccessToken(User user, IList<string> roles);
+        string GenerateAccessToken(User user);
         RefreshToken GenerateRefreshToken(int userId);
         ClaimsPrincipal? GetPrincipalFromExpiredToken(string token);
     }

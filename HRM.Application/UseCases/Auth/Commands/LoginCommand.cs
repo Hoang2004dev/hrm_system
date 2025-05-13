@@ -1,4 +1,5 @@
 ﻿using HRM.Application.DTOs.Auth;
+using HRM.Application.UseCases.Auth.Dtos;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,5 @@ using System.Threading.Tasks;
 
 namespace HRM.Application.UseCases.Auth.Commands
 {
-    public class LoginCommand : IRequest<LoginResponse>
-    {
-        public string Username { get; set; } = null!;
-        public string Password { get; set; } = null!;
-    }
+    public record LoginCommand(string Username, string Password) : IRequest<AuthResponseDto>;
 }

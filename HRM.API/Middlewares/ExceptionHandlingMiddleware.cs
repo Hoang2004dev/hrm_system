@@ -22,14 +22,11 @@ namespace HRM.API.Middlewares
         {
             try
             {
-                Debug.Print("Before next middleware");
                 await _next(context);
-                Debug.Print("After next middleware");
             }
             catch (Exception ex)
             {
-                Debug.Print("Exception caught in middleware");
-                _logger.LogError(ex, ex.Message);
+                _logger.LogError(ex,"Exception caught in middleware: {Message}", ex.Message);
                 await HandleExceptionAsync(context, ex);
             }
         }

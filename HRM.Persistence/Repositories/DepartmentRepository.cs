@@ -13,9 +13,7 @@ namespace HRM.Persistence.Repositories
 {
     public class DepartmentRepository : GenericRepository<Department>, IDepartmentRepository
     {
-        public DepartmentRepository(HRMDbContext context,
-            ISpecificationEvaluator<Department> specEvaluator)
-            : base(context, specEvaluator) { }   
+        public DepartmentRepository(HRMDbContext context) : base(context) { }   
     }
 }
 

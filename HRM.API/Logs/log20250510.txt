@@ -1,0 +1,553 @@
+2025-05-10 10:42:25.223 +07:00 [INF] User profile is available. Using 'C:\Users\nvhoa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-10 10:42:25.787 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/ - null null
+2025-05-10 10:42:25.787 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 10:42:25.786 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 10:42:25.910 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-10 10:42:25.911 +07:00 [INF] Hosting environment: Development
+2025-05-10 10:42:25.911 +07:00 [INF] Content root path: D:\C# .Net Project\HRM\HRM.API
+2025-05-10 10:42:25.902 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 122.6342ms
+2025-05-10 10:42:26.570 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 793.6802ms
+2025-05-10 10:42:26.626 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 10:42:26.719 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.3474ms
+2025-05-10 10:42:26.822 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/ - 499 null null 1046.245ms
+2025-05-10 10:42:26.825 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44395/, Response status code: 499
+2025-05-10 10:42:33.189 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 10:42:33.202 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:33.245 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:42:33.249 +07:00 [INF] Authorization failed for the request at filter 'HRM.API.Filters.AuthorizationFilters.PermissionAuthorizationFilter'.
+2025-05-10 10:42:33.251 +07:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2025-05-10 10:42:33.255 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-05-10 10:42:33.260 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 9.6885ms
+2025-05-10 10:42:33.261 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:33.266 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 403 null null 77.2776ms
+2025-05-10 10:42:43.140 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/3 - null null
+2025-05-10 10:42:43.159 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:43.160 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:42:43.161 +07:00 [INF] Authorization failed for the request at filter 'HRM.API.Filters.AuthorizationFilters.PermissionAuthorizationFilter'.
+2025-05-10 10:42:43.162 +07:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2025-05-10 10:42:43.163 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-05-10 10:42:43.163 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 2.6063ms
+2025-05-10 10:42:43.165 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:43.170 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/3 - 403 null null 30.0131ms
+2025-05-10 10:42:52.281 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 10:42:52.285 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:52.285 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:42:52.285 +07:00 [INF] Authorization failed for the request at filter 'HRM.API.Filters.AuthorizationFilters.PermissionAuthorizationFilter'.
+2025-05-10 10:42:52.286 +07:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2025-05-10 10:42:52.286 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-05-10 10:42:52.286 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 0.4877ms
+2025-05-10 10:42:52.286 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:42:52.290 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 403 null null 8.6823ms
+2025-05-10 10:44:09.514 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 10:44:09.608 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 94.17ms
+2025-05-10 10:44:09.651 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 10:44:09.653 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 10:44:09.657 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 4.9074ms
+2025-05-10 10:44:09.663 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.1751ms
+2025-05-10 10:44:10.194 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 10:44:10.207 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.0141ms
+2025-05-10 10:44:10.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/favicon-32x32.png - null null
+2025-05-10 10:44:10.225 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-10 10:44:10.227 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/favicon-32x32.png - 200 628 image/png 15.5003ms
+2025-05-10 10:44:17.921 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 10:44:17.954 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:44:17.963 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:44:17.973 +07:00 [INF] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:44:21.709 +07:00 [INF] Executed DbCommand (157ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 10:44:21.963 +07:00 [INF] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3989 ms
+2025-05-10 10:44:21.964 +07:00 [INF] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:44:21.971 +07:00 [INF] Executing OkObjectResult, writing value of type 'HRM.API.Middlewares.ApiResponse`1[[System.Collections.Generic.List`1[[HRM.Application.DTOs.Role.RoleResponseDTO, HRM.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 10:44:21.987 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 4024.0401ms
+2025-05-10 10:44:21.988 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:44:22.002 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 200 null application/json; charset=utf-8 4081.5147ms
+2025-05-10 10:45:27.236 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 10:45:27.240 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:45:27.240 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:45:27.241 +07:00 [INF] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:45:27.344 +07:00 [INF] Executed DbCommand (23ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 10:45:27.813 +07:00 [INF] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 571 ms
+2025-05-10 10:45:27.813 +07:00 [INF] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:45:28.118 +07:00 [ERR] Unhandled exception
+HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken)
+   at lambda_method22(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-05-10 10:45:28.162 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 10:45:28.166 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 926.23ms
+2025-05-10 10:45:28.167 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:45:28.169 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 500 null application/json; charset=utf-8 932.6857ms
+2025-05-10 10:56:25.595 +07:00 [INF] User profile is available. Using 'C:\Users\nvhoa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-10 10:56:26.000 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 10:56:25.999 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 10:56:25.999 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/ - null null
+2025-05-10 10:56:26.125 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 145.8277ms
+2025-05-10 10:56:26.153 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-10 10:56:26.153 +07:00 [INF] Hosting environment: Development
+2025-05-10 10:56:26.154 +07:00 [INF] Content root path: D:\C# .Net Project\HRM\HRM.API
+2025-05-10 10:56:26.189 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 207.4316ms
+2025-05-10 10:56:26.394 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/ - 499 null null 417.6832ms
+2025-05-10 10:56:26.396 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44395/, Response status code: 499
+2025-05-10 10:56:26.480 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 10:56:26.500 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5609ms
+2025-05-10 10:56:51.680 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 10:56:51.760 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:56:51.802 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:56:51.817 +07:00 [INF] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:56:54.733 +07:00 [INF] Executed DbCommand (95ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 10:56:54.954 +07:00 [INF] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3135 ms
+2025-05-10 10:56:54.955 +07:00 [INF] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:56:54.968 +07:00 [INF] Executing OkObjectResult, writing value of type 'HRM.API.Middlewares.ApiResponse`1[[System.Collections.Generic.List`1[[HRM.Application.DTOs.Role.RoleResponseDTO, HRM.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 10:56:54.995 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 3187.896ms
+2025-05-10 10:56:54.996 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:56:55.014 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 200 null application/json; charset=utf-8 3333.9848ms
+2025-05-10 10:58:10.816 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 10:58:10.896 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 79.6734ms
+2025-05-10 10:58:10.940 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 10:58:10.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 10:58:10.954 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 1.1334ms
+2025-05-10 10:58:10.975 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.0192ms
+2025-05-10 10:58:11.124 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 10:58:11.140 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.6661ms
+2025-05-10 10:58:21.962 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 10:58:21.994 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:58:22.005 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:58:22.006 +07:00 [INF] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:58:22.114 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 10:58:22.119 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 112 ms
+2025-05-10 10:58:22.119 +07:00 [INF] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:58:22.120 +07:00 [INF] Executing OkObjectResult, writing value of type 'HRM.API.Middlewares.ApiResponse`1[[System.Collections.Generic.List`1[[HRM.Application.DTOs.Role.RoleResponseDTO, HRM.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 10:58:22.124 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 119.4881ms
+2025-05-10 10:58:22.125 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:58:22.164 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 200 null application/json; charset=utf-8 201.9552ms
+2025-05-10 10:58:33.149 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 10:58:33.154 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:58:33.154 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 10:58:33.155 +07:00 [INF] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:58:33.178 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 10:58:33.594 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 438 ms
+2025-05-10 10:58:33.594 +07:00 [INF] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 10:58:33.880 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 725.6835ms
+2025-05-10 10:58:34.116 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 10:58:34.885 +07:00 [ERR] No current roles found for User with ID = 1
+HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken)
+   at lambda_method243(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRM.API.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext context)
+2025-05-10 10:58:34.911 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 1762.3631ms
+2025-05-10 11:01:13.468 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 11:01:13.478 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 10.7656ms
+2025-05-10 11:01:13.553 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:01:13.562 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:01:13.563 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 1.2152ms
+2025-05-10 11:01:13.573 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.6461ms
+2025-05-10 11:01:14.177 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:01:14.191 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.2155ms
+2025-05-10 11:01:20.881 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 11:01:20.908 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:01:20.914 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:01:20.915 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:01:20.946 +07:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:01:20.947 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 32 ms
+2025-05-10 11:01:20.948 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:01:20.948 +07:00 [INF] Executing OkObjectResult, writing value of type 'HRM.API.Middlewares.ApiResponse`1[[System.Collections.Generic.List`1[[HRM.Application.DTOs.Role.RoleResponseDTO, HRM.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 11:01:20.950 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 35.6553ms
+2025-05-10 11:01:20.950 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:01:20.952 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 200 null application/json; charset=utf-8 71.0878ms
+2025-05-10 11:13:39.880 +07:00 [INF] User profile is available. Using 'C:\Users\nvhoa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-10 11:13:40.117 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/ - null null
+2025-05-10 11:13:40.179 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-10 11:13:40.179 +07:00 [INF] Hosting environment: Development
+2025-05-10 11:13:40.179 +07:00 [INF] Content root path: D:\C# .Net Project\HRM\HRM.API
+2025-05-10 11:13:40.338 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:13:40.338 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:13:40.619 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 311.6398ms
+2025-05-10 11:13:40.626 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 288.6035ms
+2025-05-10 11:13:40.619 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/ - 499 null null 509.0183ms
+2025-05-10 11:13:40.641 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44395/, Response status code: 499
+2025-05-10 11:13:40.874 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:13:40.902 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.8028ms
+2025-05-10 11:13:44.979 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:13:44.998 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:13:45.044 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:13:45.062 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:13:48.483 +07:00 [INF] Executed DbCommand (210ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:13:48.811 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3747 ms
+2025-05-10 11:13:48.812 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:13:49.106 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 4056.7768ms
+2025-05-10 11:13:49.293 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:13:50.028 +07:00 [ERR] No current roles found for User with ID = 1
+HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.API\Controllers\RoleController.cs:line 29
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRM.API.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext context) in D:\C# .Net Project\HRM\HRM.API\Middlewares\ExceptionHandlingMiddleware.cs:line 26
+2025-05-10 11:13:50.103 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 5124.687ms
+2025-05-10 11:16:45.236 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - null null
+2025-05-10 11:16:45.243 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:16:45.244 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:16:45.281 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:16:45.384 +07:00 [INF] Executed DbCommand (30ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:16:45.573 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 291 ms
+2025-05-10 11:16:45.573 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:16:45.583 +07:00 [INF] Executing OkObjectResult, writing value of type 'HRM.API.Middlewares.ApiResponse`1[[System.Collections.Generic.List`1[[HRM.Application.DTOs.Role.RoleResponseDTO, HRM.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-10 11:16:45.590 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 345.5686ms
+2025-05-10 11:16:45.590 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:16:45.593 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/2 - 200 null application/json; charset=utf-8 359.8054ms
+2025-05-10 11:19:24.066 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:19:24.069 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:19:24.069 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:19:24.070 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:19:24.140 +07:00 [INF] Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:19:24.412 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 341 ms
+2025-05-10 11:19:24.412 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:19:24.664 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 594.3347ms
+2025-05-10 11:19:24.840 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:19:25.429 +07:00 [ERR] No current roles found for User with ID = 1
+HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.API\Controllers\RoleController.cs:line 29
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRM.API.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext context) in D:\C# .Net Project\HRM\HRM.API\Middlewares\ExceptionHandlingMiddleware.cs:line 26
+2025-05-10 11:19:25.432 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 1365.9907ms
+2025-05-10 11:26:18.903 +07:00 [INF] User profile is available. Using 'C:\Users\nvhoa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-10 11:26:19.124 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/ - null null
+2025-05-10 11:26:19.187 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-10 11:26:19.187 +07:00 [INF] Hosting environment: Development
+2025-05-10 11:26:19.188 +07:00 [INF] Content root path: D:\C# .Net Project\HRM\HRM.API
+2025-05-10 11:26:19.451 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/ - 404 null null 332.986ms
+2025-05-10 11:26:19.471 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44395/, Response status code: 404
+2025-05-10 11:26:21.546 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:26:21.546 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:26:21.623 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 75.7923ms
+2025-05-10 11:26:21.645 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.577ms
+2025-05-10 11:26:21.912 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:26:21.932 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.8707ms
+2025-05-10 11:26:25.713 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:26:25.762 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:26:25.806 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:26:25.824 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:26:28.899 +07:00 [INF] Executed DbCommand (104ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:26:29.312 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3487 ms
+2025-05-10 11:26:29.313 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:26:29.634 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 3821.2175ms
+2025-05-10 11:26:29.838 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:26:30.602 +07:00 [ERR] Exception caught in middleware
+2025-05-10 11:26:30.602 +07:00 [ERR] No current roles found for User with ID = 1
+HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.API\Controllers\RoleController.cs:line 28
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRM.API.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext context) in D:\C# .Net Project\HRM\HRM.API\Middlewares\ExceptionHandlingMiddleware.cs:line 25
+2025-05-10 11:26:30.680 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 4967.3381ms
+2025-05-10 11:27:32.419 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 11:27:32.491 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 72.3277ms
+2025-05-10 11:27:32.541 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:27:32.544 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:27:32.545 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 1.1979ms
+2025-05-10 11:27:32.559 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.4983ms
+2025-05-10 11:27:32.707 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:27:32.714 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.2169ms
+2025-05-10 11:27:47.352 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:27:47.356 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:27:47.361 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:27:47.362 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:27:47.438 +07:00 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:27:47.739 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 376 ms
+2025-05-10 11:27:47.739 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:27:48.011 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 650.3236ms
+2025-05-10 11:27:48.204 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:27:48.910 +07:00 [ERR] Exception caught in middleware
+2025-05-10 11:27:48.911 +07:00 [ERR] HRM.Application.Exceptions.NotFoundException: No current roles found for User with ID = 1
+   at HRM.Application.UseCases.Role.Queries.GetCurrentRolesByUserIdQueryHandler.Handle(GetCurrentRolesByUserIdQuery request, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\UseCases\Role\Queries\GetCurrentRolesByUserIdQueryHandle.cs:line 30
+   at HRM.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\C# .Net Project\HRM\HRM.Application\Behaviors\ValidationBehavior.cs:line 26
+   at HRM.API.Controllers.RoleController.GetCurrentRolesByUserId(Int32 userId, CancellationToken cancellationToken)
+   at lambda_method120(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRM.API.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext context)
+2025-05-10 11:27:48.914 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 1562.5419ms
+2025-05-10 11:28:13.596 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 11:28:13.599 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 3.1476ms
+2025-05-10 11:28:13.660 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:28:13.665 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:28:13.666 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 1.2533ms
+2025-05-10 11:28:13.673 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.0418ms
+2025-05-10 11:28:13.804 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:28:13.809 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.0555ms
+2025-05-10 11:28:24.383 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:28:24.385 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:28:24.396 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:28:24.398 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:28:24.488 +07:00 [INF] Executed DbCommand (56ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:28:25.169 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 770 ms
+2025-05-10 11:28:25.169 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:28:25.672 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 1275.3291ms
+2025-05-10 11:28:26.048 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:28:27.437 +07:00 [ERR] Exception caught in middleware
+2025-05-10 11:28:27.437 +07:00 [ERR] No current roles found for User with ID = 1
+2025-05-10 11:28:27.440 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 3057.2045ms
+2025-05-10 11:37:06.280 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/index.html - null null
+2025-05-10 11:37:06.291 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/index.html - 200 null text/html;charset=utf-8 11.6224ms
+2025-05-10 11:37:06.354 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_vs/browserLink - null null
+2025-05-10 11:37:06.355 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-10 11:37:06.356 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 0.9008ms
+2025-05-10 11:37:06.360 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7568ms
+2025-05-10 11:37:07.019 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - null null
+2025-05-10 11:37:07.023 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.9402ms
+2025-05-10 11:37:13.354 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:37:13.355 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:37:13.380 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:37:13.381 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:37:13.560 +07:00 [INF] Executed DbCommand (34ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:37:14.221 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 839 ms
+2025-05-10 11:37:14.221 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:37:14.994 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 1613.3302ms
+2025-05-10 11:37:15.619 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:37:17.528 +07:00 [ERR] Exception caught in middleware
+2025-05-10 11:37:17.528 +07:00 [ERR] No current roles found for User with ID = 1
+2025-05-10 11:37:17.532 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 4177.7086ms
+2025-05-10 11:37:29.854 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - null null
+2025-05-10 11:37:29.855 +07:00 [INF] Executing endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:37:29.856 +07:00 [INF] Route matched with {action = "GetCurrentRolesByUserId", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HRM.API.Middlewares.ApiResponse`1[System.Collections.Generic.List`1[HRM.Application.DTOs.Role.RoleResponseDTO]]]] GetCurrentRolesByUserId(Int32, System.Threading.CancellationToken) on controller HRM.API.Controllers.RoleController (HRM.API).
+2025-05-10 11:37:29.856 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:37:29.859 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ProjectId], [u].[RoleId], [r].[Id], [r].[Description], [r].[Name], [p].[Id], [p].[Description], [p].[Name], [p1].[Id], [p1].[FromDate], [p1].[ProjectId], [p1].[Status], [p1].[ToDate]
+FROM [UserProjectRoles] AS [u]
+INNER JOIN [Projects] AS [p] ON [u].[ProjectId] = [p].[Id]
+LEFT JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+LEFT JOIN [ProjectStatuses] AS [p1] ON [p].[Id] = [p1].[ProjectId]
+WHERE [u].[UserId] = @__userId_0 AND EXISTS (
+    SELECT 1
+    FROM [ProjectStatuses] AS [p0]
+    WHERE [p].[Id] = [p0].[ProjectId] AND [p0].[Status] = N'InProgress' AND [p0].[ToDate] IS NULL)
+ORDER BY [u].[UserId], [u].[ProjectId], [p].[Id], [r].[Id]
+2025-05-10 11:37:30.236 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 379 ms
+2025-05-10 11:37:30.236 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 11:37:30.579 +07:00 [INF] Executed action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API) in 722.9487ms
+2025-05-10 11:37:30.824 +07:00 [INF] Executed endpoint 'HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)'
+2025-05-10 11:37:31.795 +07:00 [ERR] Exception caught in middleware
+2025-05-10 11:37:31.795 +07:00 [ERR] No current roles found for User with ID = 1
+2025-05-10 11:37:31.796 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44395/api/Role/current/user/1 - 404 null application/json 1942.1298ms
+2025-05-10 16:08:10.500 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:08:14.724 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 4047 ms
+2025-05-10 16:08:14.729 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:08:42.608 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:08:42.722 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 112 ms
+2025-05-10 16:08:42.740 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:08:49.073 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:08:49.126 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 52 ms
+2025-05-10 16:08:49.126 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:11:45.737 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:11:45.766 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 29 ms
+2025-05-10 16:11:45.767 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)

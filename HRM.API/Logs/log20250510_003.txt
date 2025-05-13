@@ -1,0 +1,9 @@
+2025-05-10 16:16:57.664 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:17:00.973 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3154 ms
+2025-05-10 16:17:00.996 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:17:07.910 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:17:08.026 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 115 ms
+2025-05-10 16:17:08.044 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:20:21.159 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:20:26.334 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 5023 ms
+2025-05-10 16:20:26.338 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)

@@ -12,8 +12,6 @@ namespace HRM.Persistence.Repositories
 {
     public class UserProjectRoleRepository : GenericRepository<UserProjectRole>, IUserProjectRoleRepository
     {
-        public UserProjectRoleRepository(HRMDbContext context,
-            ISpecificationEvaluator<UserProjectRole> specEvaluator)
-            : base(context, specEvaluator) { }
+        public UserProjectRoleRepository(HRMDbContext context) : base(context) { }
     }
 }

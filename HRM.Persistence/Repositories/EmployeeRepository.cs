@@ -9,9 +9,7 @@ namespace HRM.Persistence.Repositories
 {
     public class EmployeeRepository : GenericRepository<Employee>, IEmployeeRepository
     {
-        public EmployeeRepository(HRMDbContext context,
-            ISpecificationEvaluator<Employee> specEvaluator)
-            : base(context, specEvaluator) { }
+        public EmployeeRepository(HRMDbContext context) : base(context) { }
 
         public async Task<Employee?> GetByEmailAsync(string email)
         {

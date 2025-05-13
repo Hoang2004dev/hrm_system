@@ -32,4 +32,8 @@
     <ProjectReference Include="..\HRM.Persistence\HRM.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Filters\LoggingFilters\" />
+  </ItemGroup>
+
 </Project>

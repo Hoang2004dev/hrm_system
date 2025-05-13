@@ -8,6 +8,7 @@ namespace HRM.Application.Interfaces.Repositories
 {
     public interface IUnitOfWork
     {
+        IUserRepository Users { get; }
         IDepartmentRepository Departments { get; }
         IEmployeeRepository Employees { get; }
         IRoleRepository Roles { get; }

@@ -7,6 +7,7 @@ namespace HRM.Persistence.Repositories
     {
         private readonly HRMDbContext _context;
 
+        public IUserRepository Users { get; }
         public IDepartmentRepository Departments { get; }
         public IEmployeeRepository Employees { get; }
         public IRoleRepository Roles { get; }
@@ -14,12 +15,14 @@ namespace HRM.Persistence.Repositories
 
         public UnitOfWork(
             HRMDbContext context,
+            IUserRepository users,
             IDepartmentRepository departments,
             IEmployeeRepository employees,
             IRoleRepository roles,
             IUserProjectRoleRepository userProjectRoles)
         {
             _context = context;
+            Users = users;
             Departments = departments;
             Employees = employees;
             Roles = roles;

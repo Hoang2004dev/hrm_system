@@ -12,9 +12,7 @@ namespace HRM.Persistence.Repositories
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {
-        public UserRepository(HRMDbContext context,
-    ISpecificationEvaluator<User> specEvaluator)
-    : base(context, specEvaluator) { }
+        public UserRepository(HRMDbContext context) : base(context) { }
 
     }
 }

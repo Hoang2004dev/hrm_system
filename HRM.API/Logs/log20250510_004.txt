@@ -1,0 +1,49 @@
+2025-05-10 16:20:21.159 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:20:26.334 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 5023 ms
+2025-05-10 16:20:26.338 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:26.276 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:29.914 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 3418 ms
+2025-05-10 16:55:29.936 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:40.830 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:40.960 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 129 ms
+2025-05-10 16:55:40.978 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:43.620 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:43.690 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 69 ms
+2025-05-10 16:55:43.691 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:45.078 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:45.351 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 272 ms
+2025-05-10 16:55:45.351 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:46.974 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:46.988 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 13 ms
+2025-05-10 16:55:46.989 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:48.664 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:48.689 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 23 ms
+2025-05-10 16:55:48.689 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:49.270 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:49.286 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 15 ms
+2025-05-10 16:55:49.296 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:51.312 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:51.885 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 572 ms
+2025-05-10 16:55:51.886 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:53.677 +07:00 [ERR] Exception caught in middleware
+2025-05-10 16:55:53.678 +07:00 [ERR] User with ID 6 does not exist.
+2025-05-10 16:55:58.612 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:55:59.211 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 598 ms
+2025-05-10 16:55:59.212 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:56:00.826 +07:00 [ERR] Exception caught in middleware
+2025-05-10 16:56:00.827 +07:00 [ERR] User with ID 8 does not exist.
+2025-05-10 16:56:05.171 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:56:05.649 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 477 ms
+2025-05-10 16:56:05.650 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:56:07.160 +07:00 [ERR] Exception caught in middleware
+2025-05-10 16:56:07.160 +07:00 [ERR] User with ID 99 does not exist.
+2025-05-10 16:56:39.468 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:56:39.901 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 433 ms
+2025-05-10 16:56:39.902 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:56:41.331 +07:00 [ERR] Exception caught in middleware
+2025-05-10 16:56:41.331 +07:00 [ERR] User with ID 88 does not exist.
+2025-05-10 16:57:01.777 +07:00 [INF] [LoggingActionFilter] Starting action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:57:02.354 +07:00 [INF] [ExecutionTimeFilter] Execution time for HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API): 576 ms
+2025-05-10 16:57:02.354 +07:00 [INF] [LoggingActionFilter] Finished action HRM.API.Controllers.RoleController.GetCurrentRolesByUserId (HRM.API)
+2025-05-10 16:57:03.683 +07:00 [ERR] Exception caught in middleware
+2025-05-10 16:57:03.683 +07:00 [ERR] User with ID 55 does not exist.

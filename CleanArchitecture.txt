@@ -17,4 +17,8 @@ Domain Entities (Aggregates)
 Domain Events
 Value Object
 Enums, Constants
+=== Infrastructure ===
+Identity Services (Authentication)
+File/Object Storage
+Message Queue Storage
 

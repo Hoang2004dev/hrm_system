@@ -9,6 +9,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace HRM.Infrastructure.Auth
@@ -22,7 +23,7 @@ namespace HRM.Infrastructure.Auth
             _options = options.Value;
         }
 
-        public string GenerateAccessToken(User user, IList<string> roles)
+        public string GenerateAccessToken(User user)
         {
             var claims = new List<Claim>
             {
@@ -32,9 +33,12 @@ namespace HRM.Infrastructure.Auth
                 new Claim("FullName", user.FullName ?? string.Empty)
             };
 
-            foreach (var role in roles)
+            // Add project-role claims
+            foreach (var upr in user.UserProjectRoles)
             {
-                claims.Add(new Claim(ClaimTypes.Role, role));
+                var roleName = upr.Role?.Name ?? "None";
+                var claimValue = $"{upr.ProjectId}:{roleName}";
+                claims.Add(new Claim("project", claimValue));
             }
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey));
