@@ -42,5 +42,11 @@ namespace HRM.API.Controllers
             return Ok(result);
         }
 
+        [HttpPost("register02")]
+        public async Task<IActionResult> Register02(RegisterCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
     }
 }
